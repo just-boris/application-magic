@@ -1,5 +1,6 @@
 
 /build
+/img/*.pdf
 /main.tks
 /python/.idea
 *.pyc
