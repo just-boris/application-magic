@@ -1,6 +1,6 @@
-\chapter{Поля волноводов}
-\section{Поле на их границе}
-Поле в волноводе в некотором приближении - это распределение Гаусса. Также для упрощения, пользуясь симметрией цилиндрического волновода сначала рассмотрим зависимости в сечении поля по оси x. В итоге получим формулу зависимости от $x$:
+\chapter{Взаимодействие волноводов}
+\section{Поле цилиндрического волноовда}
+Поле в волноводе в некотором приближении - это распределение Гаусса. Также для упрощения, пользуясь симметрией цилиндрического волновода сначала рассмотрим двухмерный случай, зависимость только от одной координаты:
 \begin{equation}
   \label{gauss}
   E(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{x^2}{2\sigma^2}\right)
@@ -27,21 +27,21 @@
 
 \begin{equation}
 	\label{coupling_full}
-	C = \frac{\left[\iint\limits_{-\infty}^{\infty}E_{in}(x,y)e_{f0}^*(x,y) \,dx\right]^2}
-	{\iint\limits_{-\infty}^{\infty}e_{f0}(x,y)e_{f0}^*(x,y) \,dx
-	 \iint\limits_{-\infty}^{\infty}E_{in}(x,y)E_{in}^*(x,y) \,dx}
+	C = \frac{\left[\int\limits_{-\infty}^{\infty}E_{in}(x)e_{f0}^*(x) \,dx\right]^2}
+	{\int\limits_{-\infty}^{\infty}e_{f0}(x)e_{f0}^*(x) \,dx
+	 \int\limits_{-\infty}^{\infty}E_{in}(x)E_{in}^*(x) \,dx}
 \end{equation}
 
 Так как мы рассматриваем только действительную часть распределения, то формула упрощается:
 
 \begin{equation}
 	\label{coupling}
-	C = \frac{\left[\iint\limits_{-\infty}^{\infty}E_{in}(x,y)e_{f0}(x,y) \,dx\right]^2}
-	{\iint\limits_{-\infty}^{\infty}e_{f0}(x,y)^2 \,dx
-	 \iint\limits_{-\infty}^{\infty}E_{in}(x,y)^2 \,dx}
+	C = \frac{\left[\int\limits_{-\infty}^{\infty}E_{in}(x)e_{f0}(x) \,dx\right]^2}
+	{\int\limits_{-\infty}^{\infty}e_{f0}(x)^2 \,dx
+	 \int\limits_{-\infty}^{\infty}E_{in}(x)^2 \,dx}
 \end{equation}
 
-Это выражение называется отношением перекрытия  и показывает, какая часть энергии перейдет в возбуждение моды во втором волноводе. 
+Это выражение называется интегралом перекрытия  и показывает, какая часть энергии перейдет в возбуждение моды во втором волноводе. 
 
 Эта величина максимальна и равна 1 при совпадении формы и центра каждого и уменьшается при увеличении расстояния между их центрами. Зафиксируем положение планарного волновода и будем перемещать центр цилиндрического, при этом будем вычислять значение интеграла (\ref{transition}). Воспользуемся для этого библиотекой scipy и языком программирования Python и получим график:
 \begin{figure}[h!]
@@ -56,7 +56,16 @@
   \label{gauss3d}
   E(x,y)=\frac{1}{2\pi\sigma_1\sigma_2}\exp\left(-\frac{x^2}{2\sigma_1^2}-\frac{y^2}{2\sigma_2^2}\right)
 \end{equation}
-где $\sigma_1$ и $\sigma_2$ - параметр масштаба для осей $x$ и $y$ соответственно. График этого уравнения выглядит представлен на рисунке \ref{gauss3dPlot}.
+где $\sigma_1$ и $\sigma_2$ - радиус моды по осям $x$ и $y$ соответственно. График этого уравнения выглядит представлен на рисунке \ref{gauss3dPlot}.
+
+Аналогично двухмерному случаю, найдем интеграл перекрытия.
+
+\begin{equation}
+	\label{coupling}
+	C = \frac{\left[\iint\limits_{-\infty}^{\infty}E_{in}(x,y)e_{f0}(x,y) \,dxdy\right]^2}
+	{\iint\limits_{-\infty}^{\infty}e_{f0}(x,y)^2 \,dxdy
+	 \iint\limits_{-\infty}^{\infty}E_{in}(x,y)^2 \,dxdy}
+\end{equation}
 
 \begin{figure}[h!]
 	\includegraphics[width=0.5\textwidth]{img/gauss3d.png}
@@ -64,4 +73,3 @@
 	\label{gauss3dPlot}
 \end{figure}
 
-Все показанные выше двухмерные соотношения аналогичным образом выглядят и в трехмерном варианте
