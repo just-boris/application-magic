@@ -1,16 +1,23 @@
-\chapter{Примеры формул}
+\chapter{Моделирование}
+\section{Инструменты моделирования}
 
-Формула (\ref{eq1}) — описывает плотность вероятности для нормального закона распределения.
+По выраженным выше формулам построим графики. Для расчетов используем бибилотеку SciPy для языка программирования Python. В этой библиотеке есть все необходимые нам математические функции, а также возможность скомпоновать из них более сложные для наших расчетов.
 
-\begin{equation}
-  \label{eq1}
-  \frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
-\end{equation}
+Для графической части используем пакет Mathplotlib, гибкий и мощный построитель графиков. 
 
-А вот еще формула, описывающая что-то.
+\section{Моделирование поперечного смещения}
 
-\begin{equation}
-f(x,y,\alpha, \beta) =
-\frac{\sum \limits_{n=1}^{\infty} A_n \cos \left( \frac{2 n \pi x}{\nu} \right)}
-{\prod \mathcal{F} \{g(x,y)\} }
-\end{equation}
+При поперечном смещении центр выходного поля смещается относительно входного на расстояние $\delta x$. В ходе моделироывания, получились следующие зависимости:
+
+\begin{figure}[ht!]
+	\begin{subfigure}{.48\textwidth}
+		\includegraphics[width=1\linewidth]{}
+		\caption{Зависимость коэффициента передачи}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{.48\textwidth}
+		\includegraphics[width=1\linewidth]{}
+		\caption{Схематичный вид}
+	\end{subfigure}
+	\caption{Поперечное смещение}
+\end{figure}
