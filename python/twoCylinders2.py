@@ -5,7 +5,7 @@ import main
 from wg_base.coupling import couplingX
 from gauss import GaussX
 
-outputW = GaussX(4, 0)
+outputW = GaussX(7, 0)
 
 def substrat(x):
     inputW = GaussX(4, x)

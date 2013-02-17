@@ -11,13 +11,13 @@
 
 \begin{figure}[h!]
 	\begin{minipage}[h]{0.49\linewidth}
-		\center{\includegraphics[width=1\linewidth]{img/cylinderGauss.png} \\ а)}
+		\center{\includegraphics[width=1\linewidth]{img/field_distribution.png} \\ а)}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[h]{0.49\linewidth}
-		\center{\includegraphics[width=1\linewidth]{img/planarGauss.png} \\ б)}
+		\center{\includegraphics[width=1\linewidth]{img/field_distribution2.png} \\ б)}
 	\end{minipage}
-	\caption{Распределение поля в волноводах: а) первый, б) второй}
+	\caption{Распределение поля в волноводах с разным радиусом моды: \mbox{а) 7~мкм, б) 4~мкм}}
 	\label{diameter}
 \end{figure}
 
@@ -43,7 +43,21 @@
 
 Это выражение называется интегралом перекрытия  и показывает, какая часть энергии перейдет в возбуждение моды во втором волноводе. 
 
-В зависимости от взаимного расположения волноводов изменяется расположение распределений под интегралом и соответственно изменяется итоговое значение
+\begin{figure}[h!]
+	\includegraphics[width=.5\textwidth]{img/transverse_movement.pdf}
+	\caption{Поперечное смещение волноводов}
+\end{figure}
+
+В зависимости от взаимного расположения волноводов изменяется расположение распределений под интегралом и соответственно изменяется итоговое значение.
+
+В случае поперечного смещения, взаимное положение полей мод принимает такой вид:
+
+\begin{figure}[h!]
+	\includegraphics[width=.5\textwidth]{img/intersection.png}
+	\caption{Распределение полей при поперечнои смещении}
+\end{figure}
+
+Поле возбуждаемой моды имеет максимум при $x=0$, а поле в входном волноводе имеет максимум в точке $x=4$. Это несоответствие уменьшает выходную мощность моды. Очевидно что коэффициент передачи максимален и равен 1 при условии $E_{in} = e_{f0}$ для всех $x$
 
 \section{Поле волноводов в пространстве}
 
