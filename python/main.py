@@ -5,7 +5,7 @@ import pylab
 
 def getOutImagePath(file):
     dir, filename =  path.split(file)
-    return path.normpath(path.join(dir, "..\img", path.splitext(filename)[0]+".png"))
+    return path.normpath(path.join(dir, "../img", path.splitext(filename)[0]+".png"))
 
 
 def arrow_axes(xlim, ylim, xtext, ytext):
