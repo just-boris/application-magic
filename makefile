@@ -4,6 +4,9 @@ build/main.pdf: img/field_distribution.png img/field_distribution2.png img/gauss
      img/transition.png img/twoCylinders.png img/twoCylinders2.png \
      img/planar_propagation.pdf  img/refraction_full_inner.pdf  img/refraction.pdf  img/transverse_movement.pdf 
 	pdflatex -synctex=1 --output-directory=build -interaction=nonstopmode main.tex
+	cd .. && bibtex main && cd ..
+	pdflatex -synctex=1 --output-directory=build -interaction=nonstopmode main.tex
+	
 %.png: 
 	python python/$(*F).py
 
