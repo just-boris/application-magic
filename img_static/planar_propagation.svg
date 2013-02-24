@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 "
-   sodipodi:docname="Новый документ 1">
+   sodipodi:docname="planar_propagation.svg">
   <defs
      id="defs4">
     <marker
@@ -90,9 +90,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="264.8251"
-     inkscape:cy="141.01128"
+     inkscape:zoom="1.4"
+     inkscape:cx="263.18726"
+     inkscape:cy="208.78161"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -124,7 +124,7 @@
        id="guide2991" />
     <sodipodi:guide
        orientation="1,0"
-       position="43.214286,204.28571"
+       position="43.392856,204.46434"
        id="guide8976" />
   </sodipodi:namedview>
   <metadata
@@ -135,7 +135,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -505,44 +505,44 @@
     <text
        xml:space="preserve"
        style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="36.534599"
-       y="824.13953"
+       x="34.919064"
+       y="827.01794"
        id="text8970"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8972"
-         x="36.534599"
-         y="824.13953"
-         style="font-size:12px">n<tspan
-   style="font-size:65%;baseline-shift:sub"
-   id="tspan9004">c</tspan></tspan></text>
+         x="34.919064"
+         y="827.01794"
+         style="font-size:18px">n<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3079">c</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="36.534599"
-       y="849.98779"
+       x="34.640373"
+       y="850.8703"
        id="text8970-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8972-8"
-         x="36.534599"
-         y="849.98779"
-         style="font-size:12px">n<tspan
-   style="font-size:65%;baseline-shift:sub"
-   id="tspan9002">f</tspan></tspan></text>
+         x="34.640373"
+         y="850.8703"
+         style="font-size:18px">n<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3077">f</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="36.534599"
-       y="975.836"
+       x="35.09045"
+       y="978.10889"
        id="text8970-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8972-1"
-         x="36.534599"
-         y="975.836"
-         style="font-size:12px">n<tspan
-   style="font-size:65%;baseline-shift:sub"
-   id="tspan9017">s</tspan></tspan></text>
+         x="35.09045"
+         y="978.10889"
+         style="font-size:18px">n<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3081">s</tspan></tspan></text>
   </g>
 </svg>

@@ -15,11 +15,11 @@ def arrow_axes(xlim, ylim, xtext, ytext):
     y_ext = (ylim[1] - ylim[0]) * 1.05 + ylim[0]  # отступ для стрелки
     pylab.annotate("", (xlim[0], ylim[0]), xytext=(x_ext, ylim[0]), arrowprops=arrowprops)  # абсцисса
     if not xtext is None:
-        pylab.annotate(xtext, (xlim[0], ylim[0]), xytext=(x_ext, ylim[0]))  # подпись абсциссы
+        pylab.annotate(xtext, (xlim[0], ylim[0]), xytext=(x_ext, ylim[0]), fontsize=20)  # подпись абсциссы
 
     pylab.annotate("", (xlim[0], ylim[0]), xytext=(xlim[0], y_ext), arrowprops=arrowprops)  # ордината
     if not ytext is None:
-        pylab.annotate(ytext, (xlim[0], ylim[0]), xytext=(xlim[0], y_ext))  # подпись к ней
+        pylab.annotate(ytext, (xlim[0], ylim[0]), xytext=(xlim[0], y_ext), fontsize=20)  # подпись к ней
     pylab.xlim(xlim[0], xlim[1])
     pylab.ylim(ylim[0], ylim[1])
 

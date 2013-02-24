@@ -2,7 +2,8 @@ all: build/main.pdf
 
 build/main.pdf: img/field_distribution.png img/field_distribution2.png img/gauss3d.png img/intersection.png \
      img/transition.png img/twoCylinders.png img/twoCylinders2.png \
-     img/planar_propagation.pdf  img/refraction_full_inner.pdf  img/refraction.pdf  img/transverse_movement.pdf 
+     img/planar_propagation.pdf  img/refraction_full_inner.pdf  img/refraction.pdf  img/transverse_movement.pdf \
+     img/cylinder_axes.pdf
 	pdflatex -synctex=1 --output-directory=build -interaction=nonstopmode main.tex
 	cd .. && bibtex main && cd ..
 	pdflatex -synctex=1 --output-directory=build -interaction=nonstopmode main.tex

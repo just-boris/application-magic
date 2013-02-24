@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0725"
-     inkscape:cx="66.25072"
-     inkscape:cy="134.84981"
+     inkscape:zoom="1.4654788"
+     inkscape:cx="79.324688"
+     inkscape:cy="190.29217"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -108,9 +108,10 @@
          sodipodi:role="line"
          id="tspan3013"
          x="15.322191"
-         y="943.18579">n<tspan
-   style="font-size:8.93957806px;baseline-shift:sub"
-   id="tspan3015">1</tspan></tspan></text>
+         y="943.18579"
+         style="font-size:17.99999999px">n<tspan
+   style="font-size:64.99999997%;baseline-shift:sub"
+   id="tspan3253">1</tspan></tspan></text>
     <text
        xml:space="preserve"
        x="15.322191"
@@ -121,9 +122,10 @@
          sodipodi:role="line"
          id="tspan3019"
          x="15.322191"
-         y="966.61902">n<tspan
-   style="font-size:8.93957806px;baseline-shift:sub"
-   id="tspan3029">2</tspan></tspan></text>
+         y="966.61902"
+         style="font-size:17.99999999px">n<tspan
+   style="font-size:64.99999997%;baseline-shift:sub"
+   id="tspan3251">2</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.57460779px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 151.74809,971.24602 c 0,0 -1.30383,2.66684 -7.16962,4.9486 -5.8658,2.28173 -6.9978,1.26639 -6.9978,1.26639"
@@ -141,22 +143,24 @@
          sodipodi:role="line"
          id="tspan3059"
          x="112.08929"
-         y="921.63593">φ<tspan
-   style="font-size:8.93957806px;baseline-shift:sub"
-   id="tspan3061">1</tspan></tspan></text>
+         y="921.63593"
+         style="font-size:17.99999999px">φ<tspan
+   style="font-size:64.99999997%;baseline-shift:sub"
+   id="tspan3255">1</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.75300312px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="138.64618"
-       y="1006.7257"
+       x="137.26622"
+       y="1004.6837"
        id="text3057-6"
        sodipodi:linespacing="125%"
        transform="scale(1.0133008,0.98687379)"><tspan
          sodipodi:role="line"
          id="tspan3059-7"
-         x="138.64618"
-         y="1006.7257">φ<tspan
-   style="font-size:8.93957806px;baseline-shift:sub"
-   id="tspan3087">2</tspan></tspan></text>
+         x="137.26622"
+         y="1004.6837"
+         style="font-size:18px">φ<tspan
+   style="font-size:11.70016479px;baseline-shift:sub"
+   id="tspan3257">2</tspan></tspan></text>
   </g>
 </svg>
