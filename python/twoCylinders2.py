@@ -13,6 +13,7 @@ def substrat(x):
 
 x = np.arange(-20, 20, 0.1)
 pylab.plot(x, map(substrat, x))
+pylab.annotate("Cmax = {0:.3f}".format(substrat(0)), (5, 0.75))
 main.arrow_axes((-20, 20), (0, 1), "$\Delta x$", "C")
 
 pylab.savefig(main.getOutImagePath(__file__))
