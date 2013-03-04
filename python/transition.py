@@ -12,6 +12,6 @@ def substrat(x):
         return min(planar.gauss(x), cylinder.gauss(x))
     return integrate.quad(expr, -20, 20)[0]
 
-x = np.arange(-20, 20, 0.1)
+x = np.arange(main.xmin, main.xmax, 0.1)
 pylab.plot(x, map(substrat, x))
 pylab.savefig(main.getOutImagePath(__file__))
