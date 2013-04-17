@@ -9,7 +9,7 @@ outputW = GaussX(7, 0)
 
 def substrat(x):
     inputW = GaussX(4, x)
-    return couplingX(inputW.gauss, outputW.gauss)
+    return couplingX(inputW.func, outputW.func)
 
 xmin = main.xmin
 xmax = main.xmax

@@ -9,7 +9,7 @@ planar = GaussX(7, 0)
 def substrat(x):
     cylinder = GaussX(4.5, x)
     def expr(x):
-        return min(planar.gauss(x), cylinder.gauss(x))
+        return min(planar.func(x), cylinder.func(x))
     return integrate.quad(expr, -20, 20)[0]
 
 x = np.arange(main.xmin, main.xmax, 0.1)
