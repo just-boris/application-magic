@@ -3,15 +3,21 @@ import os.path as path
 import pylab
 
 #axes range
-xmin = -20
-xmax = 20
-ymin = -20
-ymax = 20
+xmin = -10
+xmax = 10
+ymin = -10
+ymax = 10
+
+wg_radius = {
+    'Corning': 5.35,
+    'FOG': 4.1,
+    'PANDA': 4.75
+}
 
 
-def getOutImagePath(file):
-    dir, filename =  path.split(file)
-    return path.normpath(path.join(dir, "../img", path.splitext(filename)[0] + ".png"))
+def getOutImagePath(filename):
+    directory, filename = path.split(filename)
+    return path.normpath(path.join(directory, "../img", path.splitext(filename)[0] + ".png"))
 
 
 def arrow_axes(xlim, ylim, xtext, ytext):

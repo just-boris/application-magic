@@ -3,8 +3,8 @@ import numpy as np
 import main
 from gauss import GaussX
 
-inputW = GaussX(7, 0)
-outputW = GaussX(7, 4)
+inputW = GaussX(main.wg_radius['FOG'], 0)
+outputW = GaussX(main.wg_radius['FOG'], 4)
 
 
 x = np.arange(main.xmin, main.xmax, 0.1)

@@ -12,7 +12,7 @@ lam = 1.55
 n = 1.47
 
 xmin = 0
-xmax = 40
+xmax = 50
 
 
 def traversal(d):
@@ -20,7 +20,7 @@ def traversal(d):
     cylinder = Gauss(*w1, a=0, b=-2.98)
     return coupling(planar.func, cylinder.func)
 
-x = np.arange(xmin, xmax, 0.1)
+x = np.arange(xmin, xmax+1, 1)
 pylab.plot(x, map(traversal, x), 'g')
 main.arrow_axes((xmin, xmax), (0, 1), "$\Delta z$", "C")
 
