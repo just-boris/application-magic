@@ -14,7 +14,7 @@
    id="svg4442"
    version="1.1"
    inkscape:version="0.48.1 "
-   sodipodi:docname="Новый документ 4">
+   sodipodi:docname="longitudinal_movement.svg">
   <defs
      id="defs4444">
     <marker
@@ -111,7 +111,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -213,6 +213,6 @@
          id="tspan7335"
          x="257.5"
          y="791.29077"
-         style="font-size:18px">Δy</tspan></text>
+         style="font-size:18px">Δz</tspan></text>
   </g>
 </svg>
