@@ -28,11 +28,15 @@ def var_radius(r):
     return result
 var_radius.maxVal = 0
 
+def absorption(x):
+    return math.exp(-2/x)
+
 xmin = 1
 xmax = 7
 
 x = np.arange(xmin, xmax+1, 0.2)
-pylab.plot(x, map(var_radius, x))
+pylab.plot(x, map(var_radius, x), 'k')
+pylab.plot(x, map(absorption, x), 'b')
 annotateWaveguide('Corning')
 annotateWaveguide('FOG')
 annotateWaveguide('PANDA')
