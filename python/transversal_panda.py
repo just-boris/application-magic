@@ -7,7 +7,7 @@ from gauss import Gauss
 from planar import Planar
 
 outputW = Planar(open('matrix/dump2d.csv'))
-r = main.wg_radius['Corning']
+r = main.wg_radius['PANDA']
 
 def substrat(x):
     inputW = Gauss(r, r, 0, x)

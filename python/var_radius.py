@@ -13,6 +13,7 @@ planar = Planar(open('matrix/dump2d.csv'))
 def annotateWaveguide(name):
     x = main.wg_radius[name]
     y = var_radius(main.wg_radius[name])
+    pylab.plot(x, y, 'bo')
     pylab.annotate(name, xy=(x, y),  xycoords='data', xytext=(40, 50), textcoords='offset points',
                    arrowprops=dict(arrowstyle="->", connectionstyle="arc,angleA=180,armA=50,rad=8"))
 

@@ -17,17 +17,17 @@ xmax = math.pi/3
 
 def angular_xz(fi):
     r1 = r/math.cos(fi)
-    cylinder = Gauss(r, r1, a=0, b=-2.98)
+    cylinder = Gauss(r, r1, a=0, b=main.max_coupling_point)
     return coupling(planar.func, cylinder.func)
 
 def angular_yz(fi):
     r1 = r/math.cos(fi)
-    cylinder = Gauss(r1, r, a=0, b=-2.98)
+    cylinder = Gauss(r1, r, a=0, b=main.max_coupling_point)
     return coupling(planar.func, cylinder.func)
 
 x = np.arange(xmin, xmax, 0.1)
 pylab.plot(x, map(angular_xz, x), 'k')
-pylab.plot(x, map(angular_yz, x))
+pylab.plot(x, map(angular_yz, x), 'k--')
 main.arrow_axes((xmin, xmax), (0, 1), "$\phi,rad$", "C")
 
 pylab.savefig(main.getOutImagePath(__file__))

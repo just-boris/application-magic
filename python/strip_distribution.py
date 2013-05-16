@@ -4,10 +4,10 @@ from planar import Planar
 import pylab
 import main
 
-xmin = -10
-xmax = 10
-ymin = -10
-ymax = 10
+xmin = -12
+xmax = 12
+ymin = -12
+ymax = 12
 planar = Planar(open('matrix/dump2d.csv', 'rb'))
 
 def canal(x):

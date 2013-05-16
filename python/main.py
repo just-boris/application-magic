@@ -10,10 +10,10 @@ ymax = 10
 
 wg_radius = {
     'Corning': 5.35,
-    'FOG': 4.1,
+    'FOG': 4.65,
     'PANDA': 4.75
 }
-
+max_coupling_point = -4.8
 
 def getOutImagePath(filename):
     directory, filename = path.split(filename)

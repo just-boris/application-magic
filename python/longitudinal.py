@@ -7,7 +7,8 @@ from planar import Planar
 from gauss import Gauss
 
 planar = Planar(open('matrix/dump2d.csv'))
-w = (3, 3)
+r = main.wg_radius['FOG']
+w = (r, r)
 lam = 1.55
 n = 1.47
 
@@ -17,7 +18,7 @@ xmax = 50
 
 def traversal(d):
     w1 = divergence(w, d, n, lam)
-    cylinder = Gauss(*w1, a=0, b=-2.98)
+    cylinder = Gauss(*w1, a=0, b=main.max_coupling_point)
     return coupling(planar.func, cylinder.func)
 
 x = np.arange(xmin, xmax+1, 1)
