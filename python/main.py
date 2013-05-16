@@ -7,7 +7,7 @@ xmin = -10
 xmax = 10
 ymin = -10
 ymax = 10
-
+pylab.rc('font', **{'family': 'arial'})
 wg_radius = {
     'Corning': 5.35,
     'FOG': 4.65,
