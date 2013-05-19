@@ -2,7 +2,6 @@ import pylab
 import numpy as np
 import main
 from gauss import GaussX
-from python.wg_base.coupling import couplingX
 
 inputW = GaussX(main.wg_radius['FOG'], 0)
 outputW = GaussX(main.wg_radius['FOG'], 4)

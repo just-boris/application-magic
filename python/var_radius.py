@@ -10,11 +10,11 @@ from planar import Planar
 
 planar = Planar(open('matrix/dump2d.csv'))
 
-def annotateWaveguide(name):
+def annotateWaveguide(name, text, text_position):
     x = main.wg_radius[name]
     y = var_radius(main.wg_radius[name])
     pylab.plot(x, y, 'bo')
-    pylab.annotate(name, xy=(x, y),  xycoords='data', xytext=(40, 50), textcoords='offset points',
+    pylab.annotate(name, xy=(x, y),  xycoords='data', xytext=text_position, textcoords='offset points',
                    arrowprops=dict(arrowstyle="->", connectionstyle="arc,angleA=180,armA=50,rad=8"))
 
 def intersect(r, x):
@@ -29,18 +29,17 @@ def var_radius(r):
     return result
 var_radius.maxVal = 0
 
-def absorption(x):
-    return math.exp(-2/x)
-
 xmin = 1
 xmax = 7
 
+cutoff_radius = 2.405/(2*math.pi*0.14)
+
 x = np.arange(xmin, xmax+1, 0.2)
 pylab.plot(x, map(var_radius, x), 'k')
-pylab.plot(x, map(absorption, x), 'b')
-annotateWaveguide('Corning')
-annotateWaveguide('FOG')
-annotateWaveguide('PANDA')
+# pylab.plot([cutoff_radius, cutoff_radius], [0, 1], 'b--')
+annotateWaveguide('Corning', 'Corning', (40, 40))
+annotateWaveguide('FOG', u'ОВССП', (40, 60))
+annotateWaveguide('PANDA', 'PANDA', (40, 50))
 pylab.annotate("Cmax = {0:.3f}".format(var_radius.maxVal), (3, 1))
 pylab.annotate("Rmax = {0:.1f}".format(var_radius.maxArg), (3, 0.9))
 main.arrow_axes((xmin, xmax), (0, 1.2), "$r$", "C")

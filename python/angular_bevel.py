@@ -13,21 +13,17 @@ w = (r, r)
 lam = 1.55
 n = 1.47
 
-div_angle = 2 * lam/(math.pi * r**2)
 fi_min = 0
-fi_max = 12
-
-def toRadians(fi):
-    return fi*math.pi/180
+fi_max = 60
 
 def angular_xz(fi):
-    d = 2*toRadians(fi)*r/div_angle
-    cylinder = Gauss(*w, a=d, b=main.max_coupling_point)
+    r1 = r/math.cos(fi*math.pi/180)
+    cylinder = Gauss(r, r1, a=0, b=main.max_coupling_point)
     return coupling(planar.func, cylinder.func)
 
 def angular_yz(fi):
-    d = 2*toRadians(fi)*r/div_angle
-    cylinder = Gauss(*w, a=0, b=main.max_coupling_point-d)
+    r1 = r/math.cos(fi*math.pi/180)
+    cylinder = Gauss(r1, r, a=0, b=main.max_coupling_point)
     return coupling(planar.func, cylinder.func)
 
 x = np.arange(fi_min, fi_max, 1)

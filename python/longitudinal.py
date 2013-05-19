@@ -17,7 +17,7 @@ xmax = 50
 
 
 def traversal(d):
-    w1 = divergence(w, d, n, lam)
+    w1 = divergence(w, d, lam)
     cylinder = Gauss(*w1, a=0, b=main.max_coupling_point)
     return coupling(planar.func, cylinder.func)
 
