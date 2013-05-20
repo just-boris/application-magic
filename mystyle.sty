@@ -3,6 +3,8 @@
 \RequirePackage[english,russian,ukrainian]{babel}
 \usepackage{graphics}
 \usepackage{makecell}
+\usepackage{cmap} % для кодировки шрифтов в pdf
+\usepackage{pscyr}
 \renewcommand{\rmdefault}{ftm}
 % требуется для оформления ссылок
 \RequirePackage[pdftex,unicode,colorlinks,linkcolor=blue,citecolor=red,bookmarksopen,pdfhighlight=/N]{hyperref}
@@ -34,18 +36,40 @@
 % а без этого колонтитулы не получатся
 \RequirePackage{fancyhdr}
 
+\usepackage{titlesec}
+ 
+\titleformat{\chapter}
+    {\large\filcenter\bfseries}
+    {\MakeUppercase{\chaptertitlename} \thechapter.}
+    {8pt}
+    {\bfseries}{}
+ 
+\titleformat{\section}
+    {\normalsize\bfseries}
+    {\thesection}
+    {1em}{}
+ 
+\titleformat{\subsection}
+    {\normalsize\bfseries}
+    {\thesubsection}
+    {1em}{}
+ 
+% Настройка вертикальных и горизонтальных отступов
+\titlespacing*{\chapter}{0pt}{-12pt}{3pt}
+\titlespacing*{\section}{\parindent}{3pt}{3pt}
+\titlespacing*{\subsection}{\parindent}{3pt}{3pt}
+
 % стиль библиографии
 \bibliographystyle{../main}
 
 % ну и всякие мелочи: абзацные отступы, междустрочные интервалы...
 \RequirePackage{indentfirst}
 \parindent=10mm
-\renewcommand{\baselinestretch}{1,5}
+\linespread{1.3} % полуторный интервал
 \raggedbottom
 \parskip=0mm
 \setcounter{secnumdepth}{10}
 \righthyphenmin=3
-\renewcommand{\labelitemi}{$\diamond$}
 \sloppy
 \clubpenalty=10000
 \widowpenalty=10000
