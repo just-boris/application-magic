@@ -23,7 +23,7 @@ xmax = main.xmax
 maxVal = 0
 
 x = np.arange(xmin, xmax, 0.1)
-pylab.plot(x, map(substrat, x))
+pylab.plot(x, [substrat(x_arg) for x_arg in x])
 pylab.plot([substrat.maxArg, substrat.maxArg], [0, 1], 'b--')
 pylab.annotate("Cmax = {0:.3f}".format(substrat.maxVal), (5, 0.75))
 pylab.annotate("Xmax = {0:.3f}".format(substrat.maxArg), (5, 0.68))

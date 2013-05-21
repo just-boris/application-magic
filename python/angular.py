@@ -30,7 +30,7 @@ def angular_yz(fi):
     cylinder = Gauss(*w, a=0, b=main.max_coupling_point-d)
     return coupling(planar.func, cylinder.func)
 
-x = np.arange(fi_min, fi_max, 1)
+x = np.arange(fi_min, fi_max, 0.2)
 pylab.plot(x, map(angular_xz, x), 'k', label=u'Ось XZ')
 pylab.plot(x, map(angular_yz, x), 'k--', label=u'Ось YZ')
 pylab.legend()
