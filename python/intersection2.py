@@ -5,7 +5,7 @@ import main
 from gauss import GaussX
 from planar import PlanarX
 
-inputW = GaussX(main.wg_radius['FOG'], -3.5)
+inputW = GaussX(main.wg_radius[u'ОВССП'], -3.5)
 outputW = PlanarX(open('matrix/dump1d.csv'))
 
 def intensity(function):

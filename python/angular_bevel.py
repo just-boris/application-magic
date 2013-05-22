@@ -8,7 +8,7 @@ from planar import Planar
 from gauss import Gauss
 
 planar = Planar(open('matrix/dump2d.csv'))
-r = main.wg_radius['FOG']
+r = main.wg_radius[u'ОВССП']
 w = (r, r)
 lam = 1.55
 n = 1.47

@@ -10,7 +10,7 @@ ymax = 10
 pylab.rc('font', **{'family': 'arial'})
 wg_radius = {
     'Corning': 5.35,
-    'FOG': 4.65,
+    u'ОВССП': 4.65,
     'PANDA': 4.75
 }
 max_coupling_point = -4.8

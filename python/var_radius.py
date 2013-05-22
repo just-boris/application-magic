@@ -10,7 +10,7 @@ from planar import Planar
 
 planar = Planar(open('matrix/dump2d.csv'))
 
-def annotateWaveguide(name, text, text_position):
+def annotateWaveguide(name, text_position):
     x = main.wg_radius[name]
     y = var_radius(main.wg_radius[name])
     pylab.plot(x, y, 'bo')
@@ -34,12 +34,12 @@ xmax = 7
 
 cutoff_radius = 2.405/(2*math.pi*0.14)
 
-x = np.arange(xmin, xmax+1, 0.2)
-pylab.plot(x, map(var_radius, x), 'k')
+x_range = np.arange(xmin, xmax+1, 0.2)
+pylab.plot(x_range, [var_radius(x) for x in x_range], 'k')
 # pylab.plot([cutoff_radius, cutoff_radius], [0, 1], 'b--')
-annotateWaveguide('Corning', 'Corning', (40, 40))
-annotateWaveguide('FOG', u'ОВССП', (40, 60))
-annotateWaveguide('PANDA', 'PANDA', (40, 50))
+annotateWaveguide('Corning', (40, 40))
+annotateWaveguide(u'ОВССП', (40, 60))
+annotateWaveguide('PANDA', (40, 50))
 pylab.annotate("Cmax = {0:.3f}".format(var_radius.maxVal), (3, 1))
 pylab.annotate("Rmax = {0:.1f}".format(var_radius.maxArg), (3, 0.9))
 main.arrow_axes((xmin, xmax), (0, 1.2), "$r$", "C")
