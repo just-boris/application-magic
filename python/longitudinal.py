@@ -24,6 +24,7 @@ def traversal(d):
 
 x = np.arange(xmin, xmax+1, 1)
 pylab.plot(x, map(traversal, x), 'g')
+pylab.grid()
 main.arrow_axes((xmin, xmax), (0, 1), "$\Delta z$", "C")
 
 pylab.savefig(main.getOutImagePath(__file__))

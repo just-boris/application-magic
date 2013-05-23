@@ -18,15 +18,16 @@ def substrat(x):
     return result
 substrat.maxVal = 0
 
-xmin = main.xmin
+xmin = -15
 xmax = main.xmax
 maxVal = 0
 
-x = np.arange(xmin, xmax, 0.1)
-pylab.plot(x, map(substrat, x))
+x_range = np.arange(xmin, xmax, 0.1)
+pylab.plot(x_range, [substrat(x_arg) for x_arg in x_range])
 pylab.plot([substrat.maxArg, substrat.maxArg], [0, 1], 'b--')
-pylab.annotate("Cmax = {0:.3f}".format(substrat.maxVal), (5, 0.75))
-pylab.annotate("Xmax = {0:.3f}".format(substrat.maxArg), (5, 0.68))
-main.arrow_axes((xmin, xmax), (0, 1), "$\Delta x$", "C")
+pylab.grid()
+pylab.annotate("Cmax = {0:.3f}".format(substrat.maxVal), (xmax-5, 0.75))
+pylab.annotate("Xmax = {0:.1f}".format(substrat.maxArg), (xmax-5, 0.68))
+main.arrow_axes((xmin, xmax), (0, 1), "$\Delta y$", "C")
 
 pylab.savefig(main.getOutImagePath(__file__))

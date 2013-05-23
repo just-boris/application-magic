@@ -30,10 +30,11 @@ def angular_yz(fi):
     cylinder = Gauss(*w, a=0, b=main.max_coupling_point-d)
     return coupling(planar.func, cylinder.func)
 
-x = np.arange(fi_min, fi_max, 0.2)
-pylab.plot(x, map(angular_xz, x), 'k', label=u'Ось XZ')
-pylab.plot(x, map(angular_yz, x), 'k--', label=u'Ось YZ')
+x_range = np.arange(fi_min, fi_max, 0.2)
+pylab.plot(x_range, [angular_xz(x) for x in x_range], 'k', label=u'Плоскость XZ')
+pylab.plot(x_range, [angular_yz(x) for x in x_range], 'k--', label=u'Плоскость YZ')
 pylab.legend()
+pylab.grid()
 main.arrow_axes((fi_min, fi_max), (0, 1), "$\phi,{}^\circ$", "C")
 
 pylab.savefig(main.getOutImagePath(__file__))
