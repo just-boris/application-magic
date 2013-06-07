@@ -2,6 +2,7 @@
 ## Расчет эффективности стыковки волноводов с помощью интеграла перекрытия
 
 В этом репозитории содержится текст работы и исходный код для создания иллюстраций.
+Кроме того, для работы была написана вторая программа - [Py-plot](https://github.com/just-boris/Py-plot)
 
 Текст работы написан в **_LaTeX_**, иллюстрации конвертируются из svg или строятся в **Mathplotlib**.
 
@@ -14,6 +15,7 @@
 1. Установить интерпретатор Python 2.7, если его еще нет в системе
 1. Установить [PIP](http://www.pip-installer.org/ru/latest/installing.html) - менеджер пакетов
 1. Установить все необходимые модули `pip install -r requirements.txt`
+1. Установить модули, указанные в 8 шаге установки [Py-plot](https://github.com/just-boris/Py-plot)
 1. Установить [Inkscape](http://inkscape.org/download/?lang=ru) для конвертации изображений
 1. Установить среду сборщик LaTeX - [Texmaker](http://www.xm1math.net/texmaker/download.html)
 1. Выполнить `make`
