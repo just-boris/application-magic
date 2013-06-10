@@ -1,13 +1,20 @@
 # coding=utf-8
 import os.path as path
 import pylab
+import platform
 
 #axes range
 xmin = -10
 xmax = 10
 ymin = -10
 ymax = 10
-pylab.rc('font', **{'family': 'arial'})
+
+def getFontName():
+    if platform.system() == 'Windows':
+        return 'arial'
+    else:
+        return 'serif'
+pylab.rc('font', **{'family': getFontName()})
 wg_radius = {
     'Corning': 5.35,
     u'ОВССП': 4.65,
